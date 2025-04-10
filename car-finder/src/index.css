@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 200px;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(51, 51, 100, 0.711);
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  width: 21%;
+  justify-content: end;
+  margin-right: 210px;
+  font-size: 17px;
+  color: rgb(141, 140, 140);
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.button {
+  border: 1px solid darkblue;
+  background-color: white;
+  padding: 10px 16px;
+  color: darkblue;
+  border-radius: 25px;
+}
+
+li a {
+  color: rgb(141, 140, 140);
+  margin-left: 14px;
+}
+
+@keyframes upAndDown {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+#home-img {
+  animation: upAndDown 2s infinite ease-in-out alternate-reverse both;
+}
+
+.cards {
+  max-width: 1200px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-title {
+  text-align: center;
+  margin: 1px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.content p {
+  margin: 8px;
+}
+
+.card {
+  padding: 5px;
+  border: 1px solid #dadce0;
+  box-shadow: inset 0 -1px 0 0 #dadce0;
+  margin: 14px;
+  width: 300px;
+}
+
+.card button {
+  padding: 12px;
+  background-color: white;
+  border: 2px solid rgba(64, 64, 122, 0.53);
+  margin: 12px;
+}
+
+a {
+  color: darkblue;
+  cursor: pointer;
+}
+
+.card p {
+  text-align: start;
+}
+
+.page-link {
+  width: 39px;
+  height: 35px;
+  text-align: center;
+  font-size: 15px;
+  background: rgba(51, 51, 100, 0.555);
+  border: none;
+}
+
+.pagination ul li {
+  margin: 4px;
+}
+
+.pagination {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 224px;
+  height: 32px;
+  text-align: center;
+  margin: 12px;
+  border-radius: 17px;
+  border: 1px solid #b1b1b1;
+}
+
+.brands {
+  height: 32px;
+  text-align: center;
+  margin: 12px;
+  /* border-radius: 17px; */
+  border: 1px solid #b1b1b1;
+  background: rgba(64, 64, 122, 0.53);
+  width: 98px;
+}
+
+.price {
+  height: 32px;
+  text-align: center;
+  margin: 12px;
+  /* border-radius: 17px; */
+  border: 1px solid #b1b1b1;
+  background: rgba(64, 64, 122, 0.53);
+  width: 98px;
+}
+
+.search-bar:focus {
+  border: 1px solid #b1b1b1;
+}
+
+.mini-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.car-details {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.car-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 4px;
+}
+
+.car-details-img {
+  max-width: 98%;
+  height: auto;
+  border: 4px solid #f0f0f0;
+  border-radius: 15px;
+  padding: 4px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.car-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+.car-info p {
+  margin: 0;
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  font-weight: 600;
+  color: #374151;
+  flex-basis: 40%;
+}
+
+.car-details-price {
+  font-weight: 700;
+  color: #198754;
+  font-size: 1.2rem;
+}
+
+.learn-link {
+  padding: 12px;
+  background-color: white;
+  border: 2px solid rgba(64, 64, 122, 0.53);
+  margin: 12px;
+}
